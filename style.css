@@ -166,3 +166,9 @@ nav ul li a{
         opacity: 0.3;
     }
 }
+@media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .dark-theme, .toggle-btn, .toggle-btn img, .image-box img, .image-box, .pattern, .pattern img{
+      width: 100%;
+    }
+  }
