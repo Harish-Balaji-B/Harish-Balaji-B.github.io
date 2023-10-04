@@ -102,9 +102,9 @@ nav ul li a{
     display: flex;
     align-items:center;
     justify-content: center;
-    width: 17%;
-    height: 35px;
-    border-radius: 10px;
+    width: 13%;
+    height: 50px;
+    border-radius: 6.5%;
     cursor: pointer;
 }
 .toggle-btn img{
