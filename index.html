@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish Balaji B</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/path/to/font-awesome/css/all.min.css">
+
+</head>
+<body>
+
+<div class="header">
+    <nav>
+        <a href="#" class="logo"><img src="images/logo.png" id="logo"></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Resume</a></li>
+        </ul>
+        <div class="toggle-btn" id="btn">
+            <span id="btnText">Dark</span>
+            <img src="images/moon.png" id="btnIcon">
+        </div>
+    </nav>
+
+    <div class="content">
+        <h1>Hello!</h1>
+        <h1><span>I'm</span> Harish Balaji B</h1>
+        <p>I'm a undergraduate student 
+            passionately pursuing a degree in Artificial 
+            Intelligence (AI). Eager to explore the realms 
+            of machine learning, neural networks, and 
+            data analysis, with a strong desire to 
+            contribute to the cutting-edge advancements 
+            in AI technology.</p>
+    </div>
+    <div class="social-icons">
+        <a href="https://github.com/Harish-Balaji-B" target="_blank" class="github-link">
+            <div class="github light-mode">
+                <i class="fab fa-github" id="github"></i>
+            </div>
+        </a>
+        <a href="https://www.instagram.com/harish_b_balaji07/" target="_blank" class="insta">
+            <div class="instagram light-mode">
+                <i class="fab fa-instagram" id="insta"></i>
+            </div>
+        </a>
+        <a href="https://www.linkedin.com/in/harish-balaji-b-998380250/" target="_blank" class="linkedin">
+            <div class="linkedin light-mode">
+                <i class="fab fa-linkedin" id="linkedin"></i>
+            </div>
+        </a>
+    </div>
+    
+    <div class="image-box">
+        <img src="images/user.png">
+        <div class="pattern">
+            <img src="images/background.png">
+            <img src="images/background.png">
+        </div>
+
+    </div>
+
+
+</div>
+
+<script>
+
+let btn = document.getElementById("btn");
+let btnText = document.getElementById("btnText");
+let btnIcon = document.getElementById("btnIcon");
+let logo = document.getElementById("logo");
+let githubIcon = document.getElementById("github"); // Updated to githubIcon
+let insta = document.getElementById("insta");
+let linkedin = document.getElementById("linkedin");
+
+btn.onclick = function () {
+    document.body.classList.toggle("dark-theme");
+
+    if (document.body.classList.contains("dark-theme")) {
+        btnIcon.src = "images/sun.png";
+        btnText.innerHTML = "Light";
+        logo.src = "images/logo-white.png";
+        githubIcon.classList.remove('light-mode'); 
+        githubIcon.classList.add('dark-mode'); 
+        insta.classList.remove('light-mode'); 
+        insta.classList.add('dark-mode'); 
+        linkedin.classList.remove('light-mode'); 
+        linkedin.classList.add('dark-mode'); 
+    } else {
+        btnIcon.src = "images/moon.png";
+        btnText.innerHTML = "Dark";
+        logo.src = "images/logo.png";
+        githubIcon.classList.remove('dark-mode'); 
+        githubIcon.classList.add('light-mode');
+        insta.classList.remove('dark-mode'); 
+        insta.classList.add('light-mode');
+        linkedin.classList.remove('dark-mode'); 
+        linkedin.classList.add('light-mode');
+    }
+}
+
+
+</script>
+</body>
+</html>
