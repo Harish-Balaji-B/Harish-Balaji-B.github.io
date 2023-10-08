@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harish Balaji B</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b36ed05734.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video src="images/video.mp4" autoplay muted loop></video>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>AI Enthusiast</p>
+            <h1 class="italic">Hi, I'm <span>Harish Balaji B</span><br></h1>
+            <h2>An AI student who is continuously<br>challenging the limits of <span>Intelligence.</span></h2>
+        </div>
+    </div>
+</div>
+<!-- ------------------about------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about">I am an undergraduate student with a profound passion for pursuing a degree in Artificial Intelligence (AI). My journey in AI is driven by an insatiable curiosity to explore the boundless frontiers of machine learning, neural networks, and data analysis. I find immense excitement in the prospect of diving deep into these transformative domains of technology.
+                <br>As an AI enthusiast, I am excited to embark on a journey that will not only equip me with technical expertise but also empower me to make a positive impact on society. I eagerly anticipate the challenges and opportunities that lie ahead, as I continue to push the boundaries of what AI can achieve.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                </div>
+                <div class="tab-contents act ive-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>Python, Java</li>
+                        <li><span>Machine Learning and AI Frameworks</span><br>TensorFlow, OpenCV, Scikit-Learn</li>
+                        <li><span>Deep Learning</span><br>Neural network architectures (CNNs, RNNs, etc)</li>
+                        <li><span>Data Manipulation and Databases</span><br>SQL, NoSQL</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>B. Tech. in Computer Science and Engineering (Artificial Intelligence) from<br>Amrita Vishwa Vidyapeetham, Coimbatore</li>
+                        <li><span>2019 - 2021</span><br>AISSCE from<br>Maharishi Vidya Mandir, Coimbatore</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certifications">
+                    <ul>
+                        <li><span>Ongoing</span><br>Neural Networks and Deep Learning from<br>DeepLearning.AI<li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------portfolio------------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>PowerBot</h3>
+                    <p>A chatbot based on OpenAI api, Steamlit and steamlit_chat 
+                    which focuses mainly on Energy Conservation.</p>
+                    <a href="https://github.com/Harish-Balaji-B/energy-conservation-chatbot" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Ros2 humble Autonomous Parking System using Turtlebot3 Waffle</h3>
+                    <p>The system utilizes ROS2 as the framework for communication and coordination between various components, enabling a robust and efficient solution for automated parking.</p>
+                    <a href="https://github.com/Harish-Balaji-B/Ros2_humble_Autonomous_Parking_System_using_Turtlebot3_Waffle" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work.png">
+                <div class="layer">
+                    <h3>Raspberry pi 3 Based Line Follower Robot</h3>
+                    <p>The Line Follower Robot project utilizes Raspberry Pi 3 and L298N motor driver for creating an autonomous robot capable of following a line on a track.</p>
+                    <a href="https://github.com/Harish-Balaji-B/Raspberry-pi-3-Based-Line-Follower-Robot" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/Harish-Balaji-B?tab=repositories" target="_blank" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------------contact------------------- -->
+<div id="contact">
+    <div class="container">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bharishbalaji@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7358933080</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/harish.balaji.3998263/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/Harish_Balaji_B" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://www.instagram.com/harish_b_balaji07/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/Harish-Balaji-B" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/harish-balaji-b-998380250/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/Harish Balaji B Resume.pdf" download class="btn btn2">Download Résumé</a>
+                
+            </div>
+        </div>
+    </div>
+     <div class="copyright">
+        <p>Copyright © Harish Balaji B</p>
+     </div>
+</div>
+
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px"
+    }
+</script>
+
+
+</body>
+</html>
