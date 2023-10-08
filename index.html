@@ -15,10 +15,10 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -47,7 +47,7 @@
                     <p class="tab-links" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents act ive-tab" id="skills">
                     <ul>
                         <li><span>Languages</span><br>Python, Java</li>
                         <li><span>Machine Learning and AI Frameworks</span><br>TensorFlow, OpenCV, Scikit-Learn</li>
@@ -148,6 +148,18 @@
 
     }
 
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px"
+    }
 </script>
 
 
