@@ -6,6 +6,9 @@
     font-family: 'Playfair Display', serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     background: #080808;
@@ -109,7 +112,7 @@ video {
 }
 /* -------------about---------------- */
 #about{
-    padding: 80px 0;
+    padding: 25px 0;
     color: #ababab;
 }
 
@@ -146,9 +149,7 @@ video {
     margin: 20px 0 40px;
 }
 .tab-links{
-    padding: 10px 20px;
-    border: 2px solid #fff;
-    border-radius: 5px;
+    padding: 25px 0px;
     margin: 0;
     margin-right: 50px;
     font-size: 20px;
@@ -160,11 +161,11 @@ video {
 .tab-links::after{
     content: '';
     width: 0%;
-    height: 3px;
+    height: 2px;
     background: #ff004f;
     position: absolute;
     left: 0;
-    bottom: -8px;
+    bottom: 15px;
     transition: 0.55s;
 }
 .tab-links.active-link::after{
@@ -190,7 +191,7 @@ video {
 }
 /* ----------portfolio-------- */
 #portfolio{
-    padding: 30px 0;
+    padding: 25px 0;
 }
 .work-list{
     display: grid;
@@ -329,6 +330,9 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 768px){
+    nav ul li a {
+        color: #fff;
+    }
     .header-text{
         margin-top: 20%;
         font-size: 16px;
@@ -340,4 +344,42 @@ nav .fa-solid{
         display: block;
         font-size: 25px;
     }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
 }
