@@ -141,6 +141,7 @@ video {
 }
 .about{
     font-size: 18px;
+    color: #ffffffd0;
 }
 
 .tab-titles{
@@ -180,8 +181,9 @@ video {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:#b54769;
-    font-size: 14px;
+    color:#ff004f;
+    font-size: 18px;
+    font-weight: bold;
 }
 .tab-contents{
     display: none;
